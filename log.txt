@@ -1,0 +1,33 @@
+NBA Data Integration Run Log
+Total Rows in Final Merged Dataset: 12844
+Missing values after merge:
+Unnamed: 0              0
+player_name             0
+team_abbreviation       0
+age                     0
+player_height           0
+player_weight           0
+college              1854
+country                 0
+draft_year              0
+draft_round             0
+draft_number            0
+gp                      0
+pts                     0
+reb                     0
+ast                     0
+net_rating              0
+oreb_pct                0
+dreb_pct                0
+usg_pct                 0
+ts_pct                  0
+ast_pct                 0
+season                  0
+id                     39
+full_name              39
+first_name             71
+last_name              39
+is_active              39
+dtype: int64
+
+Script completed successfully.
