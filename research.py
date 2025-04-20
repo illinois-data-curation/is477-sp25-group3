@@ -81,7 +81,7 @@ plt.close()
 # Signals successful script completion and prints the output artifacts so it’s easier to verify in a reproducible setting
 if __name__ == "__main__":
     print("\n Script finished successfully. All outputs saved.")
-    print("📁 Outputs:")
+    print("  Outputs:")
     print(" - merged_player_data.csv")
     print(" - offensive_rebound_vs_points_per_game.png")
     print(" - offensive_rebound_vs_net_rating.png")

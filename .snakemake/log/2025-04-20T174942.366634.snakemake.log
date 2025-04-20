@@ -1,0 +1,58 @@
+Assuming unrestricted shared filesystem usage.
+None
+host: Jonathans-MacBook-Air-16.local
+Building DAG of jobs...
+Using shell: /bin/bash
+Provided cores: 1 (use --cores to define parallelism)
+Rules claiming more threads will be scaled down.
+Job stats:
+job                  count
+-----------------  -------
+download_datasets        1
+total                    1
+
+Select jobs to execute...
+Execute 1 jobs...
+[Sun Apr 20 17:49:42 2025]
+localrule download_datasets:
+    output: NBA_players_data.csv, NBA_stats_data.csv
+    jobid: 0
+    reason: Missing output files: NBA_players_data.csv, NBA_stats_data.csv
+    resources: tmpdir=/var/folders/gy/z5hbc64j2zl61496b1tk4j0r0000gn/T
+
+Waiting for more resources.
+RuleException:
+CalledProcessError in file "/Users/jonathanhan/Desktop/is477/is477-sp25-group3/Snakefile", line 7:
+Command 'set -euo pipefail;  
+        # Use wget or curl to download the datasets from Kaggle (ensure proper API token setup)
+        kaggle datasets download -d wyattowalsh/basketball -p ./data
+        kaggle datasets download -d justinas/nba-players-data -p ./data' returned non-zero exit status 127.
+[Sun Apr 20 17:49:42 2025]
+Error in rule download_datasets:
+    message: None
+    jobid: 0
+    output: NBA_players_data.csv, NBA_stats_data.csv
+    shell:
+        
+        # Use wget or curl to download the datasets from Kaggle (ensure proper API token setup)
+        kaggle datasets download -d wyattowalsh/basketball -p ./data
+        kaggle datasets download -d justinas/nba-players-data -p ./data
+        
+        (command exited with non-zero exit code)
+Shutting down, this might take some time.
+Exiting because a job execution failed. Look below for error messages
+[Sun Apr 20 17:49:42 2025]
+Error in rule download_datasets:
+    message: None
+    jobid: 0
+    output: NBA_players_data.csv, NBA_stats_data.csv
+    shell:
+        
+        # Use wget or curl to download the datasets from Kaggle (ensure proper API token setup)
+        kaggle datasets download -d wyattowalsh/basketball -p ./data
+        kaggle datasets download -d justinas/nba-players-data -p ./data
+        
+        (command exited with non-zero exit code)
+Complete log(s): /Users/jonathanhan/Desktop/is477/is477-sp25-group3/.snakemake/log/2025-04-20T174942.366634.snakemake.log
+WorkflowError:
+At least one job did not complete successfully.
